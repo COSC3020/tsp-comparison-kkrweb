@@ -1,0 +1,29 @@
+name: TSP Runtime Processing
+
+on:
+  push:
+
+jobs:
+  run-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run TSP Analysis
+      run: node main.js
+
+    - name: Upload results
+      uses: actions/upload-artifact@v2
+      with:
+        name: tsp-empirical-analysis
+        path: tsp_empirical_analysis.txt
