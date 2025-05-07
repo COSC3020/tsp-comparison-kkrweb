@@ -6,6 +6,12 @@
 //
 
 
+
+// maybe fine to just make it console log in here? And judge runtimes on that? I dont even know. WIP
+
+
+
+
 var performance = require('perf_hooks').performance;
 var fs = require('fs');
 var tsp_hk = require('./hk_code').tsp_hk;
@@ -57,8 +63,7 @@ function results()
         heldKarpTimes,
         localSearchTimes
     };
-
-    fs.writeFileSync('tsp_empirical_analysis.txt', JSON.stringify(results, null, 2));
+    
 }
 
 results();
