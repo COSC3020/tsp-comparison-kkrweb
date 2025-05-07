@@ -52,7 +52,7 @@ function results()
 {
     var matrixNames = Object.keys(matrices);
 
-    for (var i = 0; i < matrixNames.length; i++) 
+    for(var i = 0; i < matrixNames.length; i++) 
     {
         var name = matrixNames[i];
         var matrix = matrices[name];
