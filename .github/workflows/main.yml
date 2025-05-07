@@ -1,4 +1,4 @@
-name: TSP Running
+name: Run TSP Analysis
 
 on:
   push:
@@ -22,4 +22,7 @@ jobs:
       run: npm install
 
     - name: Run analysis
-      run: node main.js
+      run: |
+        echo "Starting TSP Analysis"
+        node main.js
+        echo "Finished TSP Analysis"
