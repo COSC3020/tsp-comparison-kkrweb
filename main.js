@@ -1,9 +1,12 @@
+// Kane Kriz
+// UWYO COSC 3020 Algorithms
+// 7 May 2025
+// primary js file - main.js
 //
 //
-//
-//
-//
-//
+
+
+
 
 
 
@@ -19,51 +22,56 @@ var tsp_ls = require('./ls_code').tsp_ls;
 var matrices = require('./matrices');
 
 
-
+//cite .now
 
 
 function measureRuntime(algorithm, distanceMatrix) 
 {
     var startTime = performance.now();
+    var tourLength;
 
-    if (algorithm = 'held_karp') 
+    if(algorithm == 'held_karp') 
     {
-        tsp_hk(distanceMatrix);
+        tourLength = tsp_hk(distanceMatrix);
     } 
       
-    else if (algorithm = 'local_search') 
+    else if(algorithm == 'local_search') 
     {
-        tsp_ls(distanceMatrix);
+        tourLength = tsp_ls(distanceMatrix);
     }
 
     var endTime = performance.now();
-    return endTime - startTime;
+    return { runtime: endTime - startTime, tourLength: tourLength };
 }
 
 
+////
 
 
 function results() 
 {
     var matrixNames = Object.keys(matrices);
-    var heldKarpTimes = [];
-    var localSearchTimes = [];
 
     for (var i = 0; i < matrixNames.length; i++) 
     {
         var name = matrixNames[i];
         var matrix = matrices[name];
-        heldKarpTimes.push(measureRuntime('held_karp', matrix));
-        localSearchTimes.push(measureRuntime('local_search', matrix));
-    }
 
-    var results = 
-    {
-        matrixNames,
-        heldKarpTimes,
-        localSearchTimes
-    };
-    
+        //outputs:
+
+        console.log('Running Held-Karp for', name);
+        var heldKarpResult = measureRuntime('held_karp', matrix);
+        console.log('Held-Karp Result for', name, ':', heldKarpResult);
+
+        console.log('Running Local Search for', name);
+        var localSearchResult = measureRuntime('local_search', matrix);
+        console.log('Local Search Result for', name, ':', localSearchResult);
+    }
 }
 
+
 results();
+
+
+
+////
