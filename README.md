@@ -33,7 +33,7 @@ Name: Kane Kriz
 
 Start Date: 17 April 2025
 
-Last Edited: 7 May 2025
+Last Edited: 8 May 2025
 
 Feedback Request 1 Date: X
 
@@ -76,9 +76,9 @@ It was very fast, which was nice. But now I get this during the 27x27 run:
             
             RangeError: Invalid array length
 
-This seems like a fundamental JS issue that wouldnt be solved unless I switched languages or algorithms?
+This seems like a fundamental JS issue that wouldnt be solved unless I switched languages or algorithms.
 
-Either way I will address this to the best of my ability if need be.
+Per Lars advice over email, I will be continuing my exercise using up to the 26x26 data that I was able to get.
 
 Next, make a CSV using the runtimes corresponding to the matrix sizes. Predict for values 27 and higher following the behavior of earlier values.
 
@@ -86,7 +86,9 @@ These are stored within the now uploaded csv within the repo.
 
 Use R to create 3 plots of this. One for TSP HK, one for TSP LS, and one for them overlaid to make the comparison easier.
 
-Make a subtitle mentioning that times for 27 and beyond are mathematical calculated predictions rather than pulled from the actual run, due to a combination of hardware and language constraints.
+These are now all uploaded as separate pdfs within the repo.
+
+
 
 
 
