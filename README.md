@@ -58,17 +58,32 @@ Create projmain.js, implement usages of the inported files and the created matri
 
 Create the launch.json file, tweak it where applicable.
 
-Feed the JS stack 50 GB of memory so it stops hating me via `node --max-old-space-size=51200 projmain.js` on my machine. Eventually moved this to the launch.json
+Feed the JS stack 50 GB of memory so it stops hating me via `node --max-old-space-size=51200 projmain.js` on my machine. 
+
+Eventually moved this to the launch.json. This did not solve all problems.
 
 Record runtime results.
 
-Comment on errors. Per the cited results (specify) below, I have the impression that this is a fundamental JS limitation rather than the doing of my implementation directly per se.
+Realize that my original HK code form my exxercise was causing the comparison to hang at 20 entries.
+
+I then swapped it to the GeeksforGeeks JS HK code, and now a new issue arose.
+
+It was very fast, which was nice. But now I get this during the 27x27 run:
+
+            C:\Users\kanem\OneDrive\Desktop\algoproj\hk_code.js:33
+                const memo = Array.from({ length: 1 << n }, () => Array(n).fill(undefined));
+                                   ^
+            
+            RangeError: Invalid array length
+
+This seems like a fundamental JS issue that wouldnt be solved unless I switched languages or algorithms?
 
 Either way I will address this to the best of my ability if need be.
 
-Next, make a CSV using the runtimes corresponding to the matrix sizes
+Next, make a CSV using the runtimes corresponding to the matrix sizes. Predict for values 27 and higher following the behavior of earlier values.
 
 Use R to create 3 plots of this. One for TSP HK, one for TSP LS, and one for them overlaid to make the comparison easier.
+Make a subtitle mentioning that times for 27 and beyond are mathematical calculated predictions rather than pulled from the actual run.
 
 
 
