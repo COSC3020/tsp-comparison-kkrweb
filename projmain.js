@@ -32,7 +32,7 @@ function measureRuntime(distanceMatrix)
     var endTime = performance.now();
     var runtime = endTime - startTime;
     
-    console.log('Runtime: ' + runtime + ' ms');
+    console.log('Runtime of above: ' + runtime + ' ms');
 }
 
 
