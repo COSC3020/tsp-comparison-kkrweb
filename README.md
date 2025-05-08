@@ -41,6 +41,10 @@ Feedback Request 1 Date: X
 
 //
 
+
+
+
+
 My Process for going about solving the exercise - Mainly a note to self and to help keep my ideas / memory straight:
 
 Directly inported in the primary js files from my previously approved held-karp and local search exercises.
@@ -56,6 +60,13 @@ Record runtime results, before I get this inevitable error at 27x27 telling me t
 Per the cited results (specify) below, I have the impression that this is a fundamental JS limitation rather than the doing of my implementation directly per se.
 
 Either way I will address this to the best of my ability if need be.
+
+Next, make a CSV using the runtimes corresponding to the matrix sizes
+
+Use R to create 3 plots of this. One for TSP HK, one for TSP LS, and one for them overlaid to make the comparison easier.
+
+
+
 
 
 //
