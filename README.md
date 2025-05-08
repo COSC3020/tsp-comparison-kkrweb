@@ -82,8 +82,11 @@ Either way I will address this to the best of my ability if need be.
 
 Next, make a CSV using the runtimes corresponding to the matrix sizes. Predict for values 27 and higher following the behavior of earlier values.
 
+These are stored within the now uploaded csv within the repo.
+
 Use R to create 3 plots of this. One for TSP HK, one for TSP LS, and one for them overlaid to make the comparison easier.
-Make a subtitle mentioning that times for 27 and beyond are mathematical calculated predictions rather than pulled from the actual run.
+
+Make a subtitle mentioning that times for 27 and beyond are mathematical calculated predictions rather than pulled from the actual run, due to a combination of hardware and language constraints.
 
 
 
