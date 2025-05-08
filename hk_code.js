@@ -5,14 +5,6 @@
 //
 
 
-//______________________________________________________________________
-// THIS VERSION IS OBSELETE! STRAIGHT FROM MY ACTUAL HELD-KARP APPROVED EXERCISE
-// Did not respond well to running the comparison stuff well with the growing matrix sizes.
-// Thus needed to be changed.
-//______________________________________________________________________
-
-
-
 
 /*_____PSUEDOCODE PROVIDED:_____
 
@@ -164,6 +156,6 @@ function findMinDist(citiesList, distanceMatrix)
     return minDistance;
 }
 
-
+module.exports = { tsp_ls };
 
 //
