@@ -1,10 +1,9 @@
 // Kane Kriz
 // UWYO COSC 3020 Algorithms
-// 7 May 2025
-// primary js file - main.js
+// 8 May 2025
+// primary js file - projmain.js
 //
 //
-
 
 
 
@@ -14,30 +13,63 @@
 
 
 
+
+
+
 var performance = require('perf_hooks').performance;
-var fs = require('fs');
+var readlineSync = require('readline-sync');
 var tsp_hk = require('./hk_code').tsp_hk;
 var tsp_ls = require('./ls_code').tsp_ls;
-var matrices = require('./matrices');
+
+matrices = require('./matrices');
 
 
 
-function measureRuntime(distanceMatrix) 
-{
-    var startTime = performance.now();
 
-    tsp_hk(distanceMatrix);
-    tsp_ls(distanceMatrix);
 
-    var endTime = performance.now();
-    var runtime = endTime - startTime;
-    
-    console.log('Runtime of above: ' + runtime + ' ms');
-}
 
 
 
 /////
+
+
+
+
+
+function measureRuntime(hk_or_ls, matrix) 
+{
+    var startTime = performance.now();
+
+    if(hk_or_ls == 'hk') 
+    {
+    tsp_hk(matrix);
+    } 
+
+    else if(hk_or_ls == 'ls') 
+    {
+    tsp_ls(matrix);
+    }
+
+    var endTime = performance.now();
+    var runtime = endTime - startTime;
+    
+    
+console.log('Runtime of above: ' + runtime + ' ms');
+
+
+
+
+}
+
+
+
+
+
+
+/////
+
+
+
 
 
 
@@ -47,18 +79,20 @@ function results()
 
     for(var i = 0; i < matrixNames.length; i++) 
     {
-        var name = matrixNames[i];
-        var matrix = matrices[name];
+    var name = matrixNames[i];
+    var matrix = matrices[name];
 
-        console.log('HK: ', name);
-        measureRuntime(matrix);
+    console.log('HK: ', name);
+    measureRuntime('hk', matrix);
 
-        console.log('LS: ', name);
-        measureRuntime(matrix);
+    console.log('LS: ', name);
+    measureRuntime('ls', matrix);
     }
 }
 
-results();
 
+
+
+results();
 
 /////
