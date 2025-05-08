@@ -1,13 +1,17 @@
 // Kane Kriz
 // UWYO COSC 3020 Algorithms
 // 7 May 2025
-// primary js file - main.js
+// primary js file - projmain.js
 //
 //
+
+
+
 
 
 
 // maybe fine to just make it console log in here? And judge runtimes on that? I dont even know. WIP
+
 
 
 
@@ -19,32 +23,34 @@ var tsp_hk = require('./hk_code').tsp_hk;
 var tsp_ls = require('./ls_code').tsp_ls;
 var matrices = require('./matrices');
 
-//
+
+
+/////
+
+
 
 function measureRuntime(algorithm, distanceMatrix) 
 {
     var startTime = performance.now();
-    var tourLength;
 
-    if(algorithm == 'heldKarp') 
+    if(algorithm == 'hk') 
     {
-        tourLength = tsp_hk(distanceMatrix);
+        tsp_hk(distanceMatrix);
     } 
-        
-    else if(algorithm == 'localSearch') 
+    else if(algorithm == 'ls') 
     {
-        tourLength = tsp_ls(distanceMatrix);
+        tsp_ls(distanceMatrix);
     }
 
     var endTime = performance.now();
     var runtime = endTime - startTime;
     
-    return { runtime: runtime + ' ms', tourLength: tourLength };
+    console.log('Runtime: ' + runtime + ' ms');
 }
 
 
 
-//
+/////
 
 
 
@@ -57,18 +63,15 @@ function results()
         var name = matrixNames[i];
         var matrix = matrices[name];
 
-        console.log('Running Held-Karp for', name);
-        var heldKarpResult = measureRuntime('heldKarp', matrix);
-        console.log('Held-Karp Result for', name, ':', heldKarpResult);
+        console.log('HK: ', name);
+        measureRuntime('hk', matrix);
 
-        console.log('Running Local Search for', name);
-        var localSearchResult = measureRuntime('localSearch', matrix);
-        console.log('Local Search Result for', name, ':', localSearchResult);
+        console.log('LS: ', name);
+        measureRuntime('ls', matrix);
     }
 }
 
 results();
-
 
 
 /////
