@@ -1,108 +1,108 @@
 PS C:\Users\kanem\OneDrive\Desktop\algoproj> node --max-old-space-size=51200 projmain.js
 HK:  matrix_1x1
-Runtime of above: 0.07430000000000092 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.07119999999999749 ms | Tour length: 0
 LS:  matrix_1x1
-Runtime of above: 0.10419999999999874 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.13160000000000593 ms | Tour length: 0
 HK:  matrix_2x2
-Runtime of above: 0.015500000000002956 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.014899999999997249 ms | Tour length: 4
 LS:  matrix_2x2
-Runtime of above: 0.2560000000000002 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.2646999999999977 ms | Tour length: 4
 HK:  matrix_3x3
-Runtime of above: 0.052099999999995816 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.051400000000001 ms | Tour length: 8
 LS:  matrix_3x3
-Runtime of above: 0.27769999999999584 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.29990000000000094 ms | Tour length: 8
 HK:  matrix_4x4
-Runtime of above: 0.01839999999999975 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.018300000000003536 ms | Tour length: 10
 LS:  matrix_4x4
-Runtime of above: 0.30469999999999686 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.3111999999999995 ms | Tour length: 10
 HK:  matrix_5x5
-Runtime of above: 0.025399999999997647 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.021499999999996078 ms | Tour length: 11
 LS:  matrix_5x5
-Runtime of above: 0.35670000000000357 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.4311000000000007 ms | Tour length: 11
 HK:  matrix_6x6
-Runtime of above: 0.03549999999999898 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.03459999999999752 ms | Tour length: 14
 LS:  matrix_6x6
-Runtime of above: 1.0763999999999996 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 1.0718999999999994 ms | Tour length: 14
 HK:  matrix_7x7
-Runtime of above: 0.08650000000000091 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.08769999999999811 ms | Tour length: 17
 LS:  matrix_7x7
-Runtime of above: 0.4720000000000013 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.8654000000000011 ms | Tour length: 17
 HK:  matrix_8x8
-Runtime of above: 0.24040000000000106 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.23870000000000147 ms | Tour length: 19
 LS:  matrix_8x8
-Runtime of above: 0.5294999999999987 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.5457999999999998 ms | Tour length: 19
 HK:  matrix_9x9
-Runtime of above: 0.5103000000000009 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.6580000000000013 ms | Tour length: 19
 LS:  matrix_9x9
-Runtime of above: 0.6403000000000034 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.6435999999999993 ms | Tour length: 22
 HK:  matrix_10x10
-Runtime of above: 0.6015000000000015 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.5600000000000023 ms | Tour length: 27
 LS:  matrix_10x10
-Runtime of above: 0.7593000000000032 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.8267000000000024 ms | Tour length: 34
 HK:  matrix_11x11
-Runtime of above: 1.4998000000000005 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 1.5320000000000036 ms | Tour length: 32
 LS:  matrix_11x11
-Runtime of above: 0.10030000000000427 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.14789999999999992 ms | Tour length: 38
 HK:  matrix_12x12
-Runtime of above: 1.6306000000000012 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 1.5178000000000011 ms | Tour length: 43
 LS:  matrix_12x12
-Runtime of above: 0.08699999999999619 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.11749999999999972 ms | Tour length: 51
 HK:  matrix_13x13
-Runtime of above: 4.478400000000001 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 4.693399999999997 ms | Tour length: 63
 LS:  matrix_13x13
-Runtime of above: 0.08749999999999858 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.08720000000000283 ms | Tour length: 65
 HK:  matrix_14x14
-Runtime of above: 8.789099999999998 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 9.259099999999997 ms | Tour length: 75
 LS:  matrix_14x14
-Runtime of above: 0.07900000000000063 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.12449999999999761 ms | Tour length: 75
 HK:  matrix_15x15
-Runtime of above: 19.439299999999996 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 19.296000000000006 ms | Tour length: 92
 LS:  matrix_15x15
-Runtime of above: 0.09879999999999711 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.12839999999999918 ms | Tour length: 95
 HK:  matrix_16x16
-Runtime of above: 46.13019999999999 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 49.016400000000004 ms | Tour length: 110
 LS:  matrix_16x16
-Runtime of above: 0.10560000000000969 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.19920000000001892 ms | Tour length: 112
 HK:  matrix_17x17
-Runtime of above: 99.6933 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 112.7184 ms | Tour length: 129
 LS:  matrix_17x17
-Runtime of above: 0.1658999999999935 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.13409999999998945 ms | Tour length: 136
 HK:  matrix_18x18
-Runtime of above: 266.3506 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 285.00239999999997 ms | Tour length: 151
 LS:  matrix_18x18
-Runtime of above: 0.24320000000000164 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.21879999999998745 ms | Tour length: 160
 HK:  matrix_19x19
-Runtime of above: 638.3402000000001 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 756.8305 ms | Tour length: 43
 LS:  matrix_19x19
-Runtime of above: 0.19329999999990832 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.1630999999999858 ms | Tour length: 43
 HK:  matrix_20x20
-Runtime of above: 1569.8052 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 1779.5100000000002 ms | Tour length: 65
 LS:  matrix_20x20
-Runtime of above: 0.12549999999964712 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.14429999999993015 ms | Tour length: 77
 HK:  matrix_21x21
-Runtime of above: 3776.4315 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 4967.218999999999 ms | Tour length: 84
 LS:  matrix_21x21
-Runtime of above: 0.22959999999966385 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.17870000000039 ms | Tour length: 87
 HK:  matrix_22x22
-Runtime of above: 9626.3937 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 12805.2047 ms | Tour length: 89
 LS:  matrix_22x22
-Runtime of above: 0.2452000000012049 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.27620000000024447 ms | Tour length: 102
 HK:  matrix_23x23
-Runtime of above: 24036.259599999998 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 33986.2069 ms | Tour length: 113
 LS:  matrix_23x23
-Runtime of above: 0.15980000000126893 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.2246000000013737 ms | Tour length: 117
 HK:  matrix_24x24
-Runtime of above: 57914.385299999994 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 82713.50820000001 ms | Tour length: 143
 LS:  matrix_24x24
-Runtime of above: 0.2880999999906635 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.2692000000097323 ms | Tour length: 154
 HK:  matrix_25x25
-Runtime of above: 140189.0482 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 201818.90060000002 ms | Tour length: 172
 LS:  matrix_25x25
-Runtime of above: 0.6619000000064261 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.1937000000034459 ms | Tour length: 183
 HK:  matrix_26x26
-Runtime of above: 352346.56520000007 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 429633.6361 ms | Tour length: 206
 LS:  matrix_26x26
-Runtime of above: 0.3453999999910593 ms
+FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: 0.37049999996088445 ms | Tour length: 212
 HK:  matrix_27x27
 C:\Users\kanem\OneDrive\Desktop\algoproj\hk_code.js:33
     const memo = Array.from({ length: 1 << n }, () => Array(n).fill(undefined));
@@ -111,9 +111,9 @@ C:\Users\kanem\OneDrive\Desktop\algoproj\hk_code.js:33
 RangeError: Invalid array length
     at Function.from (<anonymous>)
     at tsp_hk (C:\Users\kanem\OneDrive\Desktop\algoproj\hk_code.js:33:24)
-    at measureRuntime (C:\Users\kanem\OneDrive\Desktop\algoproj\projmain.js:45:5)
-    at results (C:\Users\kanem\OneDrive\Desktop\algoproj\projmain.js:86:5)
-    at Object.<anonymous> (C:\Users\kanem\OneDrive\Desktop\algoproj\projmain.js:96:1)
+    at measureRuntime (C:\Users\kanem\OneDrive\Desktop\algoproj\projmain.js:46:22)
+    at results (C:\Users\kanem\OneDrive\Desktop\algoproj\projmain.js:83:25)
+    at Object.<anonymous> (C:\Users\kanem\OneDrive\Desktop\algoproj\projmain.js:93:1)
     at Module._compile (node:internal/modules/cjs/loader:1730:14)
     at Object..js (node:internal/modules/cjs/loader:1895:10)
     at Module.load (node:internal/modules/cjs/loader:1465:32)
@@ -121,4 +121,4 @@ RangeError: Invalid array length
     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
 
 Node.js v22.15.0
-PS C:\Users\kanem\OneDrive\Desktop\algoproj>
+PS C:\Users\kanem\OneDrive\Desktop\algoproj> 
