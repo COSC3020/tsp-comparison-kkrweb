@@ -1,3 +1,4 @@
+
 // Kane Kriz
 // UWYO COSC 3020 Algorithms
 // 8 May 2025
@@ -20,8 +21,7 @@ var performance = require('perf_hooks').performance;
 var readlineSync = require('readline-sync');
 var tsp_hk = require('./hk_code').tsp_hk;
 var tsp_ls = require('./ls_code').tsp_ls;
-
-matrices = require('./matrices');
+var matrices = require('./matrices');
 
 
 
@@ -38,27 +38,24 @@ matrices = require('./matrices');
 
 function measureRuntime(hk_or_ls, matrix) 
 {
-    var startTime = performance.now();
+    var startTime = performance.now();
+    var tourLength;
 
-    if(hk_or_ls == 'hk') 
-    {
-    tsp_hk(matrix);
-    } 
+    if(hk_or_ls == 'hk') 
+    {
+        tourLength = tsp_hk(matrix);
+    } 
 
-    else if(hk_or_ls == 'ls') 
-    {
-    tsp_ls(matrix);
-    }
+    else if(hk_or_ls == 'ls') 
+    {
+        tourLength = tsp_ls(matrix);
+    }
 
-    var endTime = performance.now();
-    var runtime = endTime - startTime;
-    
-    
-console.log('Runtime of above: ' + runtime + ' ms');
-
-
-
-
+    var endTime = performance.now();
+    var runtime = endTime - startTime;
+    
+    console.log('FOR ABOVE TSP AND ASSOCIATED SIZE: Runtime: ' + runtime + ' ms | Tour length: ' + tourLength);
+    return { runtime: runtime, tourLength: tourLength };
 }
 
 
@@ -75,19 +72,19 @@ console.log('Runtime of above: ' + runtime + ' ms');
 
 function results() 
 {
-    var matrixNames = Object.keys(matrices);
+    var matrixNames = Object.keys(matrices);
 
-    for(var i = 0; i < matrixNames.length; i++) 
-    {
-    var name = matrixNames[i];
-    var matrix = matrices[name];
+    for(var i = 0; i < matrixNames.length; i++) 
+    {
+        var name = matrixNames[i];
+        var matrix = matrices[name];
 
-    console.log('HK: ', name);
-    measureRuntime('hk', matrix);
+        console.log('HK: ', name);
+        var hkResults = measureRuntime('hk', matrix);
 
-    console.log('LS: ', name);
-    measureRuntime('ls', matrix);
-    }
+        console.log('LS: ', name);
+        var lsResults = measureRuntime('ls', matrix);
+    }
 }
 
 
