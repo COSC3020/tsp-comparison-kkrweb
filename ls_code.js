@@ -63,8 +63,9 @@ function tsp_ls(cityDistanceMatrix)
 
     currentDistance = 0;
     
-    for(var i = 0; i < numCities - 1; i++) 
-    {
+    currentDistance = 0;
+    for(var i = 0; i < numCities - 1; i++)
+         {
         var prevCity = currentPath[i];
         var currentCity = currentPath[i + 1];
         
@@ -76,7 +77,12 @@ function tsp_ls(cityDistanceMatrix)
         
         currentDistance += cityDistanceMatrix[prevCity][currentCity];
     }
-    shortestDistance = currentDistance;
+    
+    if(currentDistance !== null) 
+    {
+        currentDistance += cityDistanceMatrix[currentPath[numCities-1]][currentPath[0]];
+    }
+    shortestDistance = currentDistance; 
 
     while((repeatCount < maxRepeatCount) && (totalIterations < maxTotalIterations)) 
     {
@@ -101,8 +107,7 @@ function tsp_ls(cityDistanceMatrix)
         }
 
         newDistance = 0;
-        
-        for(var j = 0; j < numCities - 1; j++) 
+        for(var j = 0; j < numCities - 1; j++)
         {
             var prevCity = newPath[j];
             var currentCity = newPath[j + 1];
@@ -115,6 +120,12 @@ function tsp_ls(cityDistanceMatrix)
             
             newDistance += cityDistanceMatrix[prevCity][currentCity];
         }
+        
+        if(newDistance !== null) 
+        {
+            newDistance += cityDistanceMatrix[newPath[numCities-1]][newPath[0]];
+        }
+       
 
         if(newDistance != null) 
         {
@@ -172,3 +183,6 @@ function tsp_ls(cityDistanceMatrix)
 
 
 //
+
+
+module.exports = { tsp_ls };
