@@ -33,11 +33,17 @@ Name: Kane Kriz
 
 Start Date: 17 April 2025
 
-Last Edited: 6 May 2025
+Last Edited: 7 May 2025
 
 Feedback Request 1 Date: X
 
 
+
+//
+
+My Process for going about solving the exercise - Mainly a note to self and to help keep my ideas / memory straight:
+
+...
 
 
 //
