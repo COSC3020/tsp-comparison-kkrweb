@@ -14,6 +14,13 @@
 
 
 
+var performance = require('perf_hooks').performance;
+var fs = require('fs');
+var tsp_hk = require('./hk_code').tsp_hk;
+var tsp_ls = require('./ls_code').tsp_ls;
+var matrices = require('./matrices');
+
+
 
 function measureRuntime(distanceMatrix) 
 {
