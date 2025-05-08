@@ -60,9 +60,9 @@ Create the launch.json file, tweak it where applicable.
 
 Feed the JS stack 50 GB of memory so it stops hating me via `node --max-old-space-size=51200 projmain.js` on my machine. Eventually moved this to the launch.json
 
-Record runtime results, before I get this inevitable error at 27x27 telling me that the array is too large to be handled.
+Record runtime results.
 
-Per the cited results (specify) below, I have the impression that this is a fundamental JS limitation rather than the doing of my implementation directly per se.
+Comment on errors. Per the cited results (specify) below, I have the impression that this is a fundamental JS limitation rather than the doing of my implementation directly per se.
 
 Either way I will address this to the best of my ability if need be.
 
