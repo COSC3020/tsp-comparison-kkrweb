@@ -7,10 +7,11 @@
 
 
 
-
-
-
 // maybe fine to just make it console log in here? And judge runtimes on that? I dont even know. WIP
+
+
+
+
 
 var performance = require('perf_hooks').performance;
 var fs = require('fs');
@@ -18,8 +19,7 @@ var tsp_hk = require('./hk_code').tsp_hk;
 var tsp_ls = require('./ls_code').tsp_ls;
 var matrices = require('./matrices');
 
-var totalRuntime = 0;
-
+//
 
 function measureRuntime(algorithm, distanceMatrix) 
 {
@@ -30,7 +30,7 @@ function measureRuntime(algorithm, distanceMatrix)
     {
         tourLength = tsp_hk(distanceMatrix);
     } 
-      
+        
     else if(algorithm == 'localSearch') 
     {
         tourLength = tsp_ls(distanceMatrix);
@@ -38,10 +38,14 @@ function measureRuntime(algorithm, distanceMatrix)
 
     var endTime = performance.now();
     var runtime = endTime - startTime;
-    totalRuntime += runtime;
     
-    return { runtime: runtime, tourLength: tourLength };
+    return { runtime: runtime + ' ms', tourLength: tourLength };
 }
+
+
+
+//
+
 
 
 function results() 
@@ -56,16 +60,15 @@ function results()
         console.log('Running Held-Karp for', name);
         var heldKarpResult = measureRuntime('heldKarp', matrix);
         console.log('Held-Karp Result for', name, ':', heldKarpResult);
-        console.log('Total runtime:', totalRuntime.toFixed(2), 'ms');
 
         console.log('Running Local Search for', name);
         var localSearchResult = measureRuntime('localSearch', matrix);
         console.log('Local Search Result for', name, ':', localSearchResult);
-        console.log('Total runtime:', totalRuntime.toFixed(2), 'ms');
     }
 }
 
-
 results();
+
+
 
 /////
