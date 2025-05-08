@@ -56,7 +56,9 @@ Create matrix files, storing matrix varaibles of increasing size. One is random 
 
 Create projmain.js, implement usages of the inported files and the created matrix storage files.
 
-Feed the JS stack 50 GB of memory so it stops hating me via `node --max-old-space-size=51200 projmain.js` on my machine.
+Create the launch.json file, tweak it where applicable.
+
+Feed the JS stack 50 GB of memory so it stops hating me via `node --max-old-space-size=51200 projmain.js` on my machine. Eventually moved this to the launch.json
 
 Record runtime results, before I get this inevitable error at 27x27 telling me that the array is too large to be handled.
 
