@@ -2,8 +2,10 @@
 
 
 
+//This is not my code.
 
-
+//This is from https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-in-python/
+// Formal citation wtihin my readme citations section as always
 
 
 
