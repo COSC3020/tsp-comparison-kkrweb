@@ -95,7 +95,11 @@ These are now all uploaded as separate pdfs within the repo.
 //
 
 
-Response: WIP
+**Response and Explanation: ** WIP
+
+Q: The length of the tour that Held-Karp found should always be less than or equal to the tour length that Local Search found. Why is this?
+
+Response: This is the case due to 
 
 ...
 
@@ -107,6 +111,8 @@ Response: WIP
 Plagiarism Acknowledgement: I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
 
-Citations:
+Citations WIP:
 
 .now documentation
+JS memory help and guides
+JS error documentation
