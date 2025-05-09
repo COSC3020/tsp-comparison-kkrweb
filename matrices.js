@@ -1,7 +1,7 @@
-//FilewiththemanualsetmatricesonwhichthecomparisonsarebeingmadebetweentheTSPLSandHK.
-//Filetitle:matrices.js
-
-
+// Kane Kriz
+// UWYO COSC 3020 Algorithms
+// TSP Comparison Exercise - matrices.js storage file
+// 8 May 2025
 
 //weights between 0 and 1.5x the size of a dimention of the matrix.
 
@@ -535,3 +535,6 @@ matrix_26x26,
 matrix_27x27,
 matrix_28x28
 };
+
+
+////
