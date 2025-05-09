@@ -1,0 +1,53 @@
+Size,Algorithm,Runtime (ms),Tour length
+matrix_1x1,HK,0.071,0
+matrix_1x1,LS,0.132,0
+matrix_2x2,HK,0.015,4
+matrix_2x2,LS,0.265,4
+matrix_3x3,HK,0.051,8
+matrix_3x3,LS,0.3,8
+matrix_4x4,HK,0.018,10
+matrix_4x4,LS,0.311,10
+matrix_5x5,HK,0.021,11
+matrix_5x5,LS,0.431,11
+matrix_6x6,HK,0.035,14
+matrix_6x6,LS,1.072,14
+matrix_7x7,HK,0.088,17
+matrix_7x7,LS,0.865,17
+matrix_8x8,HK,0.239,19
+matrix_8x8,LS,0.546,19
+matrix_9x9,HK,0.658,19
+matrix_9x9,LS,0.644,22
+matrix_10x10,HK,0.56,27
+matrix_10x10,LS,0.827,34
+matrix_11x11,HK,1.532,32
+matrix_11x11,LS,0.148,38
+matrix_12x12,HK,1.518,43
+matrix_12x12,LS,0.117,51
+matrix_13x13,HK,4.693,63
+matrix_13x13,LS,0.087,65
+matrix_14x14,HK,9.259,75
+matrix_14x14,LS,0.124,75
+matrix_15x15,HK,19.296,92
+matrix_15x15,LS,0.128,95
+matrix_16x16,HK,49.016,110
+ matrix_16x16,LS,0.199,112
+ matrix_17x17,HK,112.718,129
+ matrix_17x17,LS,0.134,136
+ matrix_18x18,HK,285.002,151
+ matrix_18x18,LS,0.219,160
+ matrix_19x19,HK,756.831,43
+ matrix_19x19,LS,0.163,43
+ matrix_20x20,HK,1779.51,65
+ matrix_20x20,LS,0.144,77
+ matrix_21x21,HK,4967.219,84
+ matrix_21x21,LS,0.179,87
+ matrix_22x22,HK,12805.205,89
+ matrix_22x22,LS,0.276,102
+ matrix_23x23,HK,33986.207,113
+ matrix_23x23,LS,0.225,117
+ matrix_24x24,HK,82713.508,143
+ matrix_24x24,LS,0.269,154
+ matrix_25x25,HK,201818.901,172
+ matrix_25x25,LS,0.194,183
+ matrix_26x26,HK,429633.636,206
+ matrix_26x26,LS,0.37,212
