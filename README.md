@@ -44,17 +44,6 @@ Feedback Request 1 Date: 8 May 2025
 //
 
 
-
-
-
-
-
-
-
-
-//
-
-
 **Response and Explanation: ** 
 
 Q: The length of the tour that Held-Karp found should always be less than or equal to the tour length that Local Search found. Why is this?
@@ -162,17 +151,17 @@ This asymptotic difference explains the empirical differences experienced in thi
 Plagiarism Acknowledgement: I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
 
-Citations: WIP
+Citations: 
 
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_management
+“Memory Management - JavaScript | MDN.” MDN Web Docs, 6 Mar. 2025, developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_management. Accessed 9 May 2025.
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
+“Date.now() - JavaScript | MDN.” Developer.mozilla.org, developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now.
 
-https://www.geeksforgeeks.org/difference-between-array-and-map/
+GeeksforGeeks. “Difference between Array and Map.” GeeksforGeeks, 23 July 2020, www.geeksforgeeks.org/difference-between-array-and-map/. Accessed 9 May 2025.
 
-https://www.geeksforgeeks.org/memory-management-in-javascript/
+“Memory Management in JavaScript.” GeeksforGeeks, 26 June 2022, www.geeksforgeeks.org/memory-management-in-javascript/.
 
-https://medium.com/@parsakhosravani/resolving-the-javascript-heap-out-of-memory-error-a-comprehensive-guide-2298d18422d0
+Parsa Khosravani. “Resolving the “JavaScript Heap out of Memory” Error: A Comprehensive Guide.” Medium, 9 Jan. 2025, medium.com/@parsakhosravani/resolving-the-javascript-heap-out-of-memory-error-a-comprehensive-guide-2298d18422d0. Accessed 9 May 2025.
 
-For the "faster" HK file: https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-in-python/
+For the "faster" HK file: “Traveling Salesman Problem (TSP) in Python.” GeeksforGeeks, 31 May 2024, www.geeksforgeeks.org/traveling-salesman-problem-tsp-in-python/.
