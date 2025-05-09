@@ -39,7 +39,8 @@ function tsp_ls(cityDistanceMatrix)
 
     //max bounds that guarantee that this thing stops and doesnt get infinitely stuck without improvement...
     //otherwise runs very long and annoying of course if not infinite
-    //-idea from the local search wiki article attatched in the readme
+    //-idea from the local search wiki article attatched here: https://en.wikipedia.org/wiki/Local_search_(optimization)#Termination_conditions
+    //Not in the formal readme citations section as this citation originated in the LS exercise rather than this one.
     var maxRepeatCount = 1000;    
     var maxTotalIterations = 10000;
 
