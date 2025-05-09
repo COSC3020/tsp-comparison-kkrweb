@@ -164,4 +164,8 @@ GeeksforGeeks. “Difference between Array and Map.” GeeksforGeeks, 23 July 20
 
 Parsa Khosravani. “Resolving the “JavaScript Heap out of Memory” Error: A Comprehensive Guide.” Medium, 9 Jan. 2025, medium.com/@parsakhosravani/resolving-the-javascript-heap-out-of-memory-error-a-comprehensive-guide-2298d18422d0. Accessed 9 May 2025.
 
+“Performance Measurement APIs | Node.js V24.0.0 Documentation.” Nodejs.org, 2025, nodejs.org/api/perf_hooks.html. Accessed 9 May 2025.
+
+Feng, Ken. “Getting Started with Readline-Sync: Building Command-Line Applications in Node.js.” Medium, 27 July 2023, medium.com/@quinnfeng26276/getting-started-with-readline-sync-building-command-line-applications-in-node-js-81fa3bbaa237. Accessed 9 May 2025.
+
 For the "faster" HK file: “Traveling Salesman Problem (TSP) in Python.” GeeksforGeeks, 31 May 2024, www.geeksforgeeks.org/traveling-salesman-problem-tsp-in-python/.
