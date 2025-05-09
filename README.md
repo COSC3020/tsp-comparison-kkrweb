@@ -84,7 +84,9 @@ Next, make a CSV using the runtimes corresponding to the matrix sizes. Predict f
 
 These are stored within the now uploaded csv within the repo.
 
-Use R to create 3 plots of this. One for TSP HK, one for TSP LS, and one for them overlaid to make the comparison easier.
+Use R to create 3 plots of these runtime comparisons. One for TSP HK, one for TSP LS, and one for them overlaid to make the comparison easier.
+
+Similarly, then create 3 more plots now showing the two individuals as well as a comparison plot of tour length by matrix size.
 
 These are now all uploaded as separate pdfs within the repo.
 
