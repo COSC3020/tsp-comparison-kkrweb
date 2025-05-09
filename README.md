@@ -35,7 +35,7 @@ Start Date: 17 April 2025
 
 Last Edited: 8 May 2025
 
-Feedback Request 1 Date: X
+Feedback Request 1 Date: 8 May 2025
 
 
 
@@ -46,9 +46,49 @@ Feedback Request 1 Date: X
 
 
 
-**My Process for going about solving the exercise - Mainly a note to self and to help keep my ideas / memory straight:**
 
 
+
+
+
+
+//
+
+
+**Response and Explanation: ** 
+
+Q: The length of the tour that Held-Karp found should always be less than or equal to the tour length that Local Search found. Why is this?
+
+Response: 
+
+This is the case due to the fundamental differences in how the HK and LS algorithms act and compute the TSP problem.
+
+Held Karp is an exact algorithm to find a set distance solution.
+
+It systematically explores all possible tours and ensures that the shortest possible tour length is found and recorded. 
+
+This process, as one could assume, can potentially require great amounts of system resources and effort to find the single best distance for the entry matrix input into the HK.
+
+
+At large, this contrasts with Local Search as local search does not intend to find the single best solution, but a solution that is improved upon depending on set bounds.
+
+Of course, that would be ideal, but that is not the intention of LS.
+
+The intention of Local Search is to run and make general improvements and trials for given tour paths.
+
+Eventually, this process is stopped (due to user specification, a set value of retries without improvement, etc) and the best tour length that was recorded is then observed.
+
+Unlike Held Karp, Local Search does not guarantee that the shortest path length is the best that Local Search finds.
+
+The tour length output by Local Search is thus longer than or equal to the optimal tour length, as said to be expected within the problem details.
+
+
+
+
+
+
+
+**Overall Process Explanation for Completing the Exercise**
 
 Directly inported in the primary js files from my previously approved held-karp and local search exercises.
 
@@ -93,17 +133,26 @@ These are now all uploaded as separate pdfs within the repo.
 
 
 
+As evident within the output plots, the expected runtime differences and path length differences for the two were observed as expected.
 
-//
+Though they remained within the same relative range, the output best paths found for corresponding HK and LS runs always had HK be less than or equal to the LS path length count.
+
+This matches what was said to be expected from the exercise directions.
+
+The runtimes, in contrast, changed greatly relative to one another as matrix sizes increased.
+
+This is visually evident within the plots.
+
+The runtimes of the LS and HK are similar with lower matrix size values, yet the HK runtime expontentially diverges upwards in runtime as matrix size increases, while the LS remains relatively constant.
+
+This matches the theoretical asymptotic time complexity of the two implementations.
+
+With LS's runtime complexity being $O(n^2)$, and HK's runtime complexity being $O(n^2 * 2^n)$.
+
+This asymptotic difference explains the empirical differences experienced in this actual apllication and experimentation with the values.
 
 
-**Response and Explanation: ** WIP
 
-Q: The length of the tour that Held-Karp found should always be less than or equal to the tour length that Local Search found. Why is this?
-
-Response: This is the case due to 
-
-...
 
 
 
@@ -113,8 +162,17 @@ Response: This is the case due to
 Plagiarism Acknowledgement: I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
 
-Citations WIP:
+Citations: WIP
 
-.now documentation
-JS memory help and guides
-JS error documentation
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_management
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
+
+https://www.geeksforgeeks.org/difference-between-array-and-map/
+
+https://www.geeksforgeeks.org/memory-management-in-javascript/
+
+https://medium.com/@parsakhosravani/resolving-the-javascript-heap-out-of-memory-error-a-comprehensive-guide-2298d18422d0
+
+For the "faster" HK file: https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-in-python/
